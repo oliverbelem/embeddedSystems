@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "BluetoothSerial.h"
 
-#define COMPILE
+// #define COMPILE
 #ifdef COMPILE
 
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
@@ -12,7 +12,7 @@ BluetoothSerial SerialBT;
 
 void setup() {
   Serial.begin(115200);
-  SerialBT.begin("ESP32BLUE");
+  SerialBT.begin("ESP32_Bluetooth");
   Serial.println("Device started");
 }
 
